@@ -1,0 +1,149 @@
+datasets:
+  raw:
+    search:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/google_search_data.csv
+      driver_params: {}
+    
+    product:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/product_manufacturer_list.csv
+      driver_params: {}
+      
+    sales:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/sales_data.csv
+      driver_params: {}
+    
+    social:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/social_media_data.csv
+      driver_params: {}
+    
+    theme:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/theme_list.csv
+      driver_params: {}
+    
+    theme_product:
+      type: ds
+      format: csv
+      uri: ${core.data_base_path}/raw/data/Theme_product_list.csv
+      driver_params: {}
+      
+    
+  
+  cleaned:
+    search:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/google_search_data.parquet
+      driver_params: {}
+    
+    product:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/product_manufacturer_list.parquet
+      driver_params: {}
+      
+    sales:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/sales_data.parquet
+      driver_params: {}
+    
+    social:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/social_media_data.parquet
+      driver_params: {}
+    
+    theme:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/theme_list.parquet
+      driver_params: {}
+    
+    theme_product:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/Theme_product_list.parquet
+      driver_params: {}
+      
+    sales_demo:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/Sales_demo.parquet
+      driver_params: {}
+      
+    sales_master:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/Sales_master_list.parquet
+      driver_params: {}
+     
+    search_master:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/Search_master_list.parquet
+      driver_params: {}
+      
+    social_master:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/cleaned/data/Social_master_list.parquet
+      driver_params: {}
+    
+  processed:
+    sales:
+      type: ds
+      format: parquet
+      uri: ${core.data_base_path}/processed/sales/sales.parquet
+      driver_params: {}
+
+  train:
+    sales:
+      features:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/train/sales/features.parquet
+        driver_params:
+          save:
+            index: False
+      target:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/train/sales/target.parquet
+        driver_params:
+          save:
+            index: False
+  test:
+    sales:
+      features:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/test/sales/features.parquet
+        driver_params:
+          save:
+            index: False
+      target:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/test/sales/target.parquet
+        driver_params:
+          save:
+            index: False
+  score:
+    sales:
+      output:
+        type: ds
+        format: parquet
+        uri: ${core.data_base_path}/test/sales/scored_output.parquet
+        driver_params:
+          save:
+            index: False
