@@ -10,5 +10,5 @@ Files with their functions:
 - **03_model_experimenting** --> This notebook demonstrates the model experimentation and finalization. It covers EDA, outlier treatment, transformation, training, model evaluation and comparison across models.
 - **Report** -->This notebook answers the problem statement provided by the emerging technologies project.
 
-- **Health Analysis** : Check the Variable Summary Report [here] (https://drive.google.com/drive/folders/1WC8sZG6QrHUy5IjPaANnIdEWt6sfH7Dl?usp=sharing "Health Summary")
-- **Evaluation Reports** : Check the Model Summary Report [here] (https://drive.google.com/drive/folders/10UjGbdO998_Px9dy3wQFIISiJIboiX_I?usp=sharing "Health Summary")
+- **Health Analysis** : Check the Variable Summary Report [here](https://drive.google.com/drive/folders/1WC8sZG6QrHUy5IjPaANnIdEWt6sfH7Dl?usp=sharing "Health Summary")
+- **Evaluation Reports** : Check the Model Summary Report [here](https://drive.google.com/drive/folders/10UjGbdO998_Px9dy3wQFIISiJIboiX_I?usp=sharing "Health Summary")
